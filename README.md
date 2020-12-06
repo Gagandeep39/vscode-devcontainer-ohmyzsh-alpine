@@ -5,7 +5,7 @@
   - [Setup](#setup)
     - [NOTE about step 2](#note-about-step-2)
   - [Features](#features)
-
+ 
 ## Description
 
 A sample project to let you try VS Code container (Node JS Image) with oh-my-zsh, powerlevel10k theme
@@ -37,3 +37,18 @@ A sample project to let you try VS Code container (Node JS Image) with oh-my-zsh
 - `powerlevel10k` First time setup has been disabled by default
 - To install any oh-my-zsh plugin, add the git clone command to [.devcontainer -> Dockerfile](.devcontainer/Dockerfile)
 - Rebuild Container after changing any of these settings
+
+
+## Root and Not Root
+
+### Non Root
+- Uncomment USER node in Dockerfile
+
+  
+### Root
+- Comment USER node in Dockerfile
+
+### NOTE
+- Global packages cannot be instaled as non root user
+- Add them to dockerfile instead
+
