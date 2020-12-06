@@ -42,11 +42,11 @@ A sample project to let you try VS Code container (Node JS Image) with oh-my-zsh
 ## Root and Not Root
 
 ### Non Root
-- Uncomment USER node in Dockerfile
+- Switch from User root to USER node
 
   
 ### Root
-- Comment USER node in Dockerfile
+- Switch from User node to USER root
 
 ### NOTE
 - Global packages cannot be instaled as non root user

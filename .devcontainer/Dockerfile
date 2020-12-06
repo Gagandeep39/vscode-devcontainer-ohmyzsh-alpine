@@ -8,7 +8,7 @@ RUN apk add git && apk add zsh
 ##############################################################
 # Comment below code and rebuild t fix permission issue
 # RUN addgroup -S appgroup && adduser -S gagan -G appgroup
-USER node
+USER root
 ##############################################################
 ################            ZSH Config        ################
 ##############################################################
