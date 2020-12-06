@@ -6,8 +6,9 @@ RUN apk add git && apk add zsh
 ##############################################################
 ################            Create User        ###############
 ##############################################################
-RUN addgroup -S appgroup && adduser -S gagan -G appgroup
-USER gagan
+# Comment below code and rebuild t fix permission issue
+# RUN addgroup -S appgroup && adduser -S gagan -G appgroup
+# USER gagan
 ##############################################################
 ################            ZSH Config        ################
 ##############################################################
