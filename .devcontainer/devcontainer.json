@@ -15,10 +15,11 @@
 		"esbenp.prettier-vscode",
 		"edwardhjp.vscode-author-generator",
 		"oderwat.indent-rainbow",
+		"yzhang.markdown-all-in-one",
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "cp .devcontainer/.zshrc $HOME && cp .devcontainer/.p10k.zsh $HOME",
